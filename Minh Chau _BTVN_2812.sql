@@ -68,12 +68,7 @@ INNER JOIN orders o ON c.customerNumber = o.customerNumber
 INNER JOIN orderdetails o2 ON o2.orderNumber = o.orderNumber 
 WHERE firstName IN ('Jeff', 'Mary', 'Peter', 'Andy')
 GROUP BY EmployeeNumber, firstName, lastName, extension, email, officeCode, reportsTo, jobTitle
-
--- Do đề yêu cầu bảng chi tiết về Employee nên em nghĩ phải có đầy đủ thông tin, nhưng select* thì groupby * 
--- không được, nên em chọn từng fields luôn, anh chỉ thêm cho em cách lấy hết bảng mà không cần phải chọn
--- từng field như vầy với ạ 
 	
-
 
 -- 5. (Bt nâng cao) 
 -- Hãy lấy ra sản phẩm (product id + Product name)
