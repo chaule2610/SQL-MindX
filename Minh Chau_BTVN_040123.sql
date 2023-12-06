@@ -161,8 +161,4 @@ FROM sale s
 GROUP BY s.ProductID, Month(DATE_OF_SALE)
 HAVING Count(MONTH(DATE_OF_SALE))>1) AS ZF_TABLE_1
 
--- Tìm các sản phẩm được mua nhiều hơn 1 lần trong cùng 1 tháng, lấy ra productID, tháng và các ID 
--- được mua trong tháng đó với điều kiện ID được xếp thứ tự có Sales giảm dần 
 
--- Em nghĩ nếu chuyển thành đề thì sẽ thế này, nhưng có vẻ chưa rõ nghĩa lắm ở khúc điều kiện ID, nhờ anh 
--- sửa giúp em nhé
